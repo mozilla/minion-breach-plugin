@@ -115,10 +115,3 @@ The server replied with {header} in the response header.',
             self.report_issue(error.issue)
             return AbstractPlugin.EXIT_STATE_ABORTED
 
-    def _append_url(issue, urls):
-        c = 0
-        for url in urls:
-            issue['URLs'][c] = url
-            c += 1
-        return issue
-
